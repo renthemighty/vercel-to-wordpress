@@ -11,6 +11,24 @@ conversion.
 **Read first:** `docs/BUILD_SPEC.md` in this repo — it has the full technical research and
 pipeline design. Don't duplicate that thinking; work from it.
 
+## Status update: the pipeline is proven, not just planned
+
+Since this doc was first written, the underlying conversion pipeline (b442) went through a
+real hardening pass: a customer-breaking packaging bug was found and fixed, a real
+pre-deployment validator now runs on every build (structural checks + an actual disposable
+WordPress install-and-activate smoke test before anything is called done), and a live
+end-to-end proof was run: a real customer's app was rebuilt and installed live at
+`werescrewed.ca` — fully working, zero fatals, images local, visual gate clean. This is a
+live, working system now, not a research spec. Build with real confidence, but keep the
+same discipline: stop and fix any defect you find, never ship or hand off a build with a
+known issue "for now."
+
+**Scope: full-site conversion, not a partial mirror.** Each app needs its ENTIRE site
+converted — every page, every route, every piece of real content and interactive feature
+Aaron's app has — not just a homepage or a representative sample. Treat "done" as "a visitor
+to the new WordPress site can do everything they could do on the original app," not "the
+main pages look right."
+
 ## Your job right now: discovery, not building yet
 
 Before any conversion work starts, get precise answers to these questions for **each**
@@ -47,6 +65,14 @@ know, and post the answers back (see "Where to post" below).
 8. **His GitHub username** — needed to add him as a collaborator on this private repo
    (`vercel-to-wordpress`) so we can push shared build artifacts and conversion notes both
    sides can see.
+9. **Which target domain each app goes to.** Aaron has multiple domains/hosting accounts
+   under his umbrella (see his AARON_ACCESS_PACK / AARON_STATUS sections on the webshare
+   for the current roster). For EVERY Vercel app being converted, ask him explicitly and
+   directly which one of his own domains it should end up living on — do not assume, do not
+   guess from the app's name, and do not let this stay ambiguous. Build a simple table:
+   source Vercel app URL → target domain. If Aaron has an app with no domain decided yet,
+   flag that specific one as blocked-on-Aaron rather than picking one for him or leaving it
+   unstated.
 
 ## Checks and balances — how this gets verified, not just built
 
