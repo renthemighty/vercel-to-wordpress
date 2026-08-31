@@ -1,0 +1,67 @@
+{
+  "feathermoss": {
+    "target_domain": "feathermoss.com",
+    "source_of_truth": "ai_life/feathermoss/site/fm-cart.js",
+    "currency": "USD",
+    "free_shipping_over": 75,
+    "flat_shipping_rate": 6,
+    "legacy_cart_storage_key": "fm_cart_v1",
+    "product_count": 16,
+    "set_count": 4,
+    "categories": [
+      "Necklaces",
+      "Earrings",
+      "Bracelets",
+      "Rings",
+      "Charms & Extras",
+      "Sets"
+    ],
+    "tags": [
+      "Fruit Stand",
+      "Flower Bed",
+      "Pearl",
+      "Candy Counter",
+      "Everyday"
+    ],
+    "support_email": "hello@feathermoss.com",
+    "category_descriptions": {
+      "Charms & Extras": "The cheapest way into the whole thing. Clip them onto anything you already own.",
+      "Necklaces": "Beaded, charmed and enamelled. Worn short, worn long, worn all at once.",
+      "Sets": "The same pieces, chosen together, priced under the sum of their parts."
+    }
+  },
+  "rexjewelz": {
+    "target_domain": "rexjewelz.com",
+    "source_of_truth": "ai_life/rexjewelz/site/rex-cart.js",
+    "currency": "USD",
+    "free_shipping_over": 95,
+    "flat_shipping_rate": 7,
+    "legacy_cart_storage_key": "rex_cart_v1",
+    "product_count": 16,
+    "set_count": 4,
+    "categories": [
+      "Neck & Hand",
+      "Chest & Bra",
+      "Harness & Back",
+      "Waist & Belly",
+      "Anklets & Thigh",
+      "Sets"
+    ],
+    "tags": [
+      "Bronce",
+      "Fuego",
+      "Oro",
+      "Hielo",
+      "Diario"
+    ],
+    "support_email": "hello@rexjewelz.com",
+    "category_descriptions": {
+      "Neck & Hand": "collarbone to fingertip",
+      "Chest & Bra": "sternum and ribs",
+      "Harness & Back": "shoulder to spine",
+      "Waist & Belly": "waist and hip",
+      "Anklets & Thigh": "thigh to ankle",
+      "Sets": "The same pieces chosen together and priced under the sum of their parts."
+    }
+  }
+}
