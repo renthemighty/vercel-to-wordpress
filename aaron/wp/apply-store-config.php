@@ -37,6 +37,12 @@ foreach (($cfg['category_descriptions'] ?? []) as $catname => $desc) {
     else { WP_CLI::warning("category not found, cannot describe: $catname"); }
 }
 
+// The PDP note and the care bullets are brand copy lifted from each generator. The theme
+// renders them, so they are stored as options rather than hardcoded into the template.
+update_option('conv_pdp_note', $cfg['pdp_note'] ?? '');
+update_option('conv_care_bullets', $cfg['care_bullets'] ?? array());
+update_option('conv_size_note', $cfg['size_note'] ?? array());
+
 // Category order is NOT alphabetical in either catalogue. FeatherMoss runs Necklaces
 // first, and Rex Jewelz orders by where a piece sits on the body, top to bottom, which
 // is deliberate and load bearing to that brand. Carry the catalogue order across as

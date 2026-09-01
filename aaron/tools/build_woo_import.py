@@ -51,6 +51,9 @@ COLUMNS = [
     # Rex prints a one word English gloss under every product name on its cards. It is
     # real on-page copy, so it travels as product meta rather than being dropped.
     'Meta: _es',
+    # Materials render as their own spec block on the PDP, same as the original, so they
+    # travel as structured meta rather than being flattened into the description.
+    'Meta: _materials',
 ]
 
 # Variant labels are heterogeneous across the catalogue, so the attribute name is
@@ -84,7 +87,7 @@ def img_for(sku, prefix):
         return 's-' + sku.replace(prefix + 'SET-', '').lower() + '.jpg'
     return 'p-' + sku.replace(prefix, '').lower() + '.jpg'
 
-def description_for(item):
+def description_for(item, catalog_products=None):
     """Long copy if the catalogue has it, otherwise the blurb. Materials appended
     as a plain list. Copy passes through untouched, it already follows the house
     rules and is not ours to rewrite."""
@@ -97,15 +100,24 @@ def description_for(item):
         parts.append(f"<p>{item['long']}</p>")
     if item.get('es'):
         parts.append(f"<p><em>{item['name']}, {item['es']}</em></p>")
-    if item.get('materials'):
-        li = ''.join(f"<li>{m}</li>" for m in item['materials'])
-        parts.append(f"<p>Made with</p><ul>{li}</ul>")
     if item.get('contains'):
-        if item['contains'] == ['ALL']:
-            parts.append('<p>This set contains every piece we make.</p>')
-        else:
-            li = ''.join(f"<li>{s}</li>" for s in item['contains'])
-            parts.append(f"<p>This set contains</p><ul>{li}</ul>")
+        # The original lists each contained piece by NAME with its blurb, not by SKU.
+        # A bare SKU list is both uglier and loses the copy that sells the set.
+        lookup = {p['sku']: p for p in (catalog_products or [])}
+        # The everything-set lists names only. A named set lists name plus blurb. That is
+        # what each generator does, and the difference is deliberate: sixteen blurbs is a
+        # wall of text, three is a sell.
+        is_all = item['contains'] == ['ALL']
+        members = list(lookup) if is_all else item['contains']
+        li = ''
+        for sku in members:
+            p = lookup.get(sku)
+            if not p:
+                continue
+            blurb = '' if is_all else (f", {p['blurb']}" if p.get('blurb') else '')
+            li += f"<li><strong>{p['name']}</strong>{blurb}</li>"
+        if li:
+            parts.append(f"<p>What is in it</p><ul>{li}</ul>")
     return ''.join(parts)
 
 def row(**kw):
@@ -153,7 +165,8 @@ def build(brand, cfg):
                'Attribute 1 value(s)': ', '.join(labels),
                'Attribute 1 visible': '1',
                'Attribute 1 global': '1',
-               'Meta: _es': p.get('es', '')}))
+               'Meta: _es': p.get('es', ''),
+               'Meta: _materials': '|'.join(p.get('materials', []))}))
         for v in p['variants']:
             rows.append(row(
                 Type='variation', SKU=f"{p['sku']}-{re.sub(r'[^A-Z0-9]+','', v['label'].upper())}",
@@ -183,7 +196,7 @@ def build(brand, cfg):
         # The original prints the saving on every set, computed against the entry size of
         # each contained piece. It is real on-page copy and it is derivable, so it is
         # recomputed here rather than dropped.
-        desc = description_for(s)
+        desc = description_for(s, products)
         floor = 0
         for ch in children:
             cp = next((x for x in products if x['sku'] == ch), None)
@@ -210,7 +223,8 @@ def build(brand, cfg):
                'Images': image_urls(s['sku']),
                'Cross-sells': contained,
                'Position': str(pos),
-               'Meta: _es': s.get('es', '')}))
+               'Meta: _es': s.get('es', ''),
+               'Meta: _materials': '|'.join(s.get('materials', []))}))
 
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, f'{brand}-products.csv')

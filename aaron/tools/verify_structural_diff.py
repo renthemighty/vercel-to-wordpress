@@ -23,7 +23,8 @@ BRANDS = {
         'src':    os.path.expanduser('~/ai_life/feathermoss'),
         # original route -> converted route
         'routes': {
-            '/shop.html':      '/shop/',
+            '/index.html':     '/',
+        '/shop.html':      '/shop/',
             '/sets.html':      '/product-category/sets/',
             '/charms.html':    '/product-category/charms-extras/',
             '/necklaces.html': '/product-category/necklaces/',
@@ -39,7 +40,8 @@ BRANDS = {
         'origin': 'https://rexjewelz.vercel.app',
         'src':    os.path.expanduser('~/ai_life/rexjewelz'),
         'routes': {
-            '/shop.html':     '/shop/',
+            '/index.html':    '/',
+        '/shop.html':     '/shop/',
             '/sets.html':     '/product-category/sets/',
             '/body.html':     '/body/',
             '/under-50.html': '/under-50/',
@@ -126,12 +128,29 @@ def load_suppressions():
     return out
 
 
+def product_routes(cfg):
+    """Every product page, mapped original -> converted.
+
+    The first version of this gate only checked listing and content pages, which is 10 of
+    the 38 routes per brand. The 20 product pages are where price, variant and gallery
+    regressions would actually show up, so they are checked too.
+    """
+    cat = json.load(open(os.path.join(cfg['src'], 'catalog', 'catalog.json')))
+    out = {}
+    for it in cat['products'] + cat['sets']:
+        slug = re.sub(r'[^a-z0-9]+', '-', it['name'].lower()).strip('-')
+        out[f'/product/{slug}.html'] = f'/product/{slug}/'
+    return out
+
+
 def compare(brand, cfg, wp_base):
     suppressed = load_suppressions()
     catalog_names = product_names(cfg['src'])
     rows, failures = [], []
 
-    for orig_path, wp_path in cfg['routes'].items():
+    routes = dict(cfg['routes'])
+    routes.update(product_routes(cfg))
+    for orig_path, wp_path in routes.items():
         try:
             o_doc = fetch(cfg['origin'] + orig_path)
             w_doc = fetch(wp_base + wp_path)

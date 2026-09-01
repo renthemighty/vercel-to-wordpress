@@ -8,7 +8,7 @@ links are rewritten to WordPress routes, and the product grids become real loops
 
 Run:  python3 tools/build_theme.py
 """
-import os, re, shutil, sys
+import json, os, re, shutil, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT  = os.path.join(ROOT, 'out', 'themes')
@@ -333,40 +333,52 @@ $es   = get_post_meta( $product->get_id(), '_es', true );
         "if ( ! $product ) { $product = wc_get_product( get_the_ID() ); }\n"
         "get_template_part( 'template-parts/card' );\n")
 
-    # ---- front-page.php, hero lifted, grids become live queries
-    hero = grab(index, r'<section class="hero wrap">.*?</section>') or ''
-    hero, u = rewrite_links(hero, cfg['links']); unmapped |= u
-    open(os.path.join(theme, 'front-page.php'), 'w').write(f"""<?php get_header(); ?>
-{hero}
-<?php
-/* The original front page hand listed products. These are real queries now, so the
-   page follows the catalogue instead of going stale. */
-$sections = array(
-    array( 'title' => 'Featured', 'args' => array(
-        'post_type' => 'product', 'posts_per_page' => 8,
-        'meta_key' => '_featured', 'orderby' => 'menu_order', 'order' => 'ASC' ) ),
-    array( 'title' => 'Everything', 'args' => array(
-        'post_type' => 'product', 'posts_per_page' => 8,
-        'orderby' => 'menu_order', 'order' => 'ASC' ) ),
-);
-foreach ( $sections as $s ) :
-    $q = new WP_Query( $s['args'] );
-    if ( ! $q->have_posts() ) {{ continue; }} ?>
-  <section class="sec wrap">
-    <div class="sec__head">
-      <h2 class="sec__h"><?php echo esc_html( $s['title'] ); ?></h2>
-      <a class="sec__link" href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">All pieces</a>
-    </div>
-    <div class="grid">
-      <?php while ( $q->have_posts() ) : $q->the_post(); global $product;
-            $product = wc_get_product( get_the_ID() );
-            get_template_part( 'template-parts/card' );
-            endwhile; wp_reset_postdata(); ?>
-    </div>
-  </section>
-<?php endforeach; ?>
-<?php get_footer(); ?>
-""")
+    # ---- front-page.php.
+    # The whole body between header and footer is lifted, so the ticker, the type row,
+    # the editorial band and the closing block all survive. Only the product grids are
+    # swapped for live queries, carrying the exact SKUs the original listed so the page
+    # keeps its curation instead of becoming a generic "latest products" rail.
+    body_m = re.search(r'</header>(.*?)<footer', index, re.S)
+    if not body_m:
+        raise SystemExit(f'{brand}: could not lift the front page body')
+    fp = body_m.group(1)
+
+    cat = json.load(open(os.path.join(os.path.dirname(src_dir), 'catalog', 'catalog.json')))
+    slug_to_sku = {}
+    for it in cat['products'] + cat['sets']:
+        slug_to_sku[re.sub(r'[^a-z0-9]+', '-', it['name'].lower()).strip('-')] = it['sku']
+
+    def grid_to_loop(m):
+        block = m.group(0)
+        skus = []
+        for slug in re.findall(r'href="(?:\.\./)?product/([^"]+)\.html"', block):
+            sku = slug_to_sku.get(slug)
+            if sku and sku not in skus:
+                skus.append(sku)
+        if not skus:
+            return block
+        php_list = ", ".join(f"'{k}'" for k in skus)
+        return (
+            '<div class="grid">\n'
+            '<?php $skus = array(' + php_list + ');\n'
+            '  $ids = array_values( array_filter( array_map( "wc_get_product_id_by_sku", $skus ) ) );\n'
+            '  if ( $ids ) {\n'
+            '    $q = new WP_Query( array( "post_type" => "product", "post__in" => $ids,\n'
+            '        "orderby" => "post__in", "posts_per_page" => count( $ids ) ) );\n'
+            '    while ( $q->have_posts() ) { $q->the_post(); global $product;\n'
+            '      $product = wc_get_product( get_the_ID() );\n'
+            '      get_template_part( "template-parts/card" ); }\n'
+            '    wp_reset_postdata();\n'
+            '  } ?>\n'
+            '</div>')
+
+    fp = re.sub(r'<div class="(?:grid|rail)"[^>]*>.*?</div>\s*(?=</section>|<section|<div class="sec)',
+                grid_to_loop, fp, flags=re.S)
+    fp, u = rewrite_links(fp, cfg['links']); unmapped |= u
+    # build-only hooks mean nothing in WordPress
+    fp = re.sub(r'\s+data-(add|cart-[a-z-]+|base|img|sku|name|price|type|src)="[^"]*"', '', fp)
+    open(os.path.join(theme, 'front-page.php'), 'w').write(
+        "<?php get_header(); ?>\n<main>\n" + fp.strip() + "\n</main>\n<?php get_footer(); ?>\n")
 
     # ---- product archive, reproducing the original shop page
     archive_tpl = """<?php get_header();
@@ -472,6 +484,8 @@ $cats    = get_terms( array(
     </div>
     <div>
       <h1 class="pdp__name"><?php echo esc_html( $product->get_name() ); ?></h1>
+      <?php $es = get_post_meta( $product->get_id(), '_es', true );
+            if ( $es ) { echo '<p class="pdp__es">' . esc_html( $es ) . '</p>'; } ?>
       <?php if ( $product->get_short_description() ) : ?>
         <p class="pdp__blurb"><?php echo wp_kses_post( $product->get_short_description() ); ?></p>
       <?php endif; ?>
@@ -481,19 +495,64 @@ $cats    = get_terms( array(
            stock. The old pill buttons and localStorage add are gone on purpose. */
         woocommerce_template_single_add_to_cart();
       ?>
+      <?php $note = get_option( 'conv_pdp_note' );
+            if ( $note ) { echo '<p class="pdp__note">' . esc_html( $note ) . '</p>'; } ?>
       <?php if ( $product->get_description() ) : ?>
         <div class="spec"><?php echo wp_kses_post( wpautop( $product->get_description() ) ); ?></div>
       <?php endif; ?>
+      <?php /* Materials get their own spec block, as on the original. */
+        $mats = get_post_meta( $product->get_id(), '_materials', true );
+        $mats = $mats ? array_filter( explode( '|', $mats ) ) : array();
+        if ( $mats ) : ?>
+        <div class="spec">
+          <p class="spec__h">What it is made of</p>
+          <ul><?php foreach ( $mats as $m ) {
+                echo '<li><strong>' . esc_html( $m ) . '</strong></li>'; } ?></ul>
+        </div>
+      <?php endif; ?>
+      <?php /* Shown only where the product takes a size, which is the original's own
+               condition, not on every product. */
+        $sn = get_option( 'conv_size_note' );
+        $has_size = false;
+        foreach ( $product->get_attributes() as $a ) {
+            $n = is_object( $a ) ? $a->get_name() : '';
+            if ( $n && stripos( $n, 'size' ) !== false ) { $has_size = true; }
+        }
+        if ( $has_size && is_array( $sn ) && ! empty( $sn['heading'] ) ) : ?>
+        <div class="fit">
+          <p class="fit__h"><?php echo esc_html( $sn['heading'] ); ?></p>
+          <p><?php echo esc_html( $sn['body'] ); ?></p>
+        </div>
+      <?php endif; ?>
+      <?php $care = get_option( 'conv_care_bullets' );
+            if ( is_array( $care ) && $care ) : ?>
+        <div class="spec">
+          <p class="spec__h">Looking after it</p>
+          <ul><?php foreach ( $care as $c ) { echo '<li>' . esc_html( $c ) . '</li>'; } ?></ul>
+        </div>
+      <?php endif; ?>
     </div>
   </div>
-</main>
-<?php endwhile; ?>
 <?php
-$ids = $product->get_cross_sell_ids();
-if ( $ids ) :
-  $q = new WP_Query( array( 'post_type' => 'product', 'post__in' => $ids, 'posts_per_page' => 4 ) ); ?>
+/* The original prints a "Goes with" rail of four other pieces on every product page.
+   Cross sells where they exist, otherwise the next four in catalogue order, which is
+   what the original did. */
+/* The original takes the first four catalogue items other than this one, the same on
+   every page including sets. Cross sells are deliberately NOT used here: on a set they
+   are its own contents, which already appear above under "What is in it". */
+$q = new WP_Query( array(
+    'post_type'      => 'product',
+    'posts_per_page' => 4,
+    'post__not_in'   => array( $product->get_id() ),
+    'orderby'        => 'menu_order',
+    'order'          => 'ASC',
+) );
+if ( $q->have_posts() ) : ?>
   <section class="sec wrap">
-    <div class="sec__head"><h2 class="sec__h">Goes with</h2></div>
+    <div class="sec__head">
+      <h2 class="sec__h">Goes <em>with</em></h2>
+      <a class="sec__link" href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">All pieces</a>
+    </div>
     <div class="grid">
       <?php while ( $q->have_posts() ) : $q->the_post(); global $product;
             $product = wc_get_product( get_the_ID() );
@@ -502,6 +561,8 @@ if ( $ids ) :
     </div>
   </section>
 <?php endif; ?>
+</main>
+<?php endwhile; ?>
 <?php get_footer(); ?>
 """)
 

@@ -24,6 +24,13 @@
       "Everyday"
     ],
     "support_email": "hello@feathermoss.com",
+    "pdp_note": "Made to order, ships in 3 to 5 days. Free shipping over $75.",
+    "care_bullets": [
+      "Keep it out of the shower and the sea",
+      "Put it on after perfume, not before",
+      "Store it flat so nothing tangles"
+    ],
+    "size_note": null,
     "category_descriptions": {
       "Charms & Extras": "The cheapest way into the whole thing. Clip them onto anything you already own.",
       "Necklaces": "Beaded, charmed and enamelled. Worn short, worn long, worn all at once.",
@@ -55,6 +62,16 @@
       "Diario"
     ],
     "support_email": "hello@rexjewelz.com",
+    "pdp_note": "Made to order, ships in 3 to 5 days. Free shipping over $95.",
+    "care_bullets": [
+      "Rinse it after the beach or the pool, salt and chlorine are what kill plating",
+      "Put it on after perfume and lotion, never before",
+      "Store it flat and on its own so nothing tangles"
+    ],
+    "size_note": {
+      "heading": "Getting the size right",
+      "body": "Measure where the piece will actually sit, not your clothing size. If you land between two sizes take the larger one, since every piece adjusts down but none adjust up. The full guide is on the fit page."
+    },
     "category_descriptions": {
       "Neck & Hand": "collarbone to fingertip",
       "Chest & Bra": "sternum and ribs",

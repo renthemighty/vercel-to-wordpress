@@ -37,6 +37,41 @@ def category_display_order(src, cat):
     return order + missing
 
 
+def pdp_note(src):
+    """The line under the add-to-bag button, lifted from the brand's own generator."""
+    build = open(os.path.join(src, 'build.py'), encoding='utf-8').read()
+    m = re.search(r'<p class="pdp__note">(.*?)</p>', build)
+    if not m:
+        raise SystemExit(f'{src}: could not find the pdp__note text')
+    return unescape(m.group(1)).strip()
+
+
+def care_bullets(src):
+    """The "Looking after it" list, lifted rather than retyped."""
+    build = open(os.path.join(src, 'build.py'), encoding='utf-8').read()
+    m = re.search(r'Looking after it</p>\s*<ul>(.*?)</ul>', build, re.S)
+    if not m:
+        raise SystemExit(f'{src}: could not find the care bullets')
+    return [unescape(x).strip() for x in re.findall(r'<li>(.*?)</li>', m.group(1), re.S)]
+
+
+def size_note(src):
+    """Rex prints a sizing block on every product that takes a size. Lifted, not retyped.
+
+    Returns {heading, body} or None for brands that have no such block.
+    """
+    build = open(os.path.join(src, 'build.py'), encoding='utf-8').read()
+    # build.py contains more than one fit__h block. The sets one comes first, so take the
+    # one that is actually about sizing rather than the first match.
+    for m in re.finditer(r'<p class="fit__h">(.*?)</p>\s*<p>(.*?)</p>', build, re.S):
+        head = unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
+        if 'size' not in head.lower():
+            continue
+        body = re.sub(r'\s+', ' ', unescape(re.sub(r'<[^>]+>', '', m.group(2)))).strip()
+        return {'heading': head, 'body': body}
+    return None
+
+
 def category_leads(src):
     """Lead lines from the original listing pages, keyed by category name.
 
@@ -96,6 +131,9 @@ for brand, (src, domain) in SRC.items():
         'categories':             category_display_order(src, cat),
         'tags':                   cat['taxonomy']['collection'],
         'support_email':          f'hello@{domain}',
+        'pdp_note':               pdp_note(src),
+        'care_bullets':           care_bullets(src),
+        'size_note':              size_note(src),
         'category_descriptions':  category_leads(src),
     }
 
