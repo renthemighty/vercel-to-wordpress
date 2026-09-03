@@ -11,7 +11,7 @@
           <a class="btn btn--ghost" href="<?php echo esc_url( home_url( "/product-category/charms-extras/" ) ); ?>">Charms from $12</a>
         </div>
       </div>
-      <div class="hero__art"><img src="images/l-hero-fruitsalad.jpg" alt="Model wearing the Fruit Salad necklace in forest light"></div>
+      <div class="hero__art"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/l-hero-fruitsalad.jpg" alt="Model wearing the Fruit Salad necklace in forest light"></div>
     </div>
   </section>
 
@@ -62,7 +62,7 @@
         <p class="band__p">Five women, one studio in San Diego, and a great deal of arguing about colour. Every piece is strung, knotted or set by hand, which is why no two are identical and why we are fine with that.</p>
         <a class="btn btn--ember" href="<?php echo esc_url( home_url( "/about/" ) ); ?>">Meet the studio</a>
       </div>
-      <div class="band__art"><img src="images/l-workbench.jpg" alt="Hands stringing glass beads at the workbench"></div>
+      <div class="band__art"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/l-workbench.jpg" alt="Hands stringing glass beads at the workbench"></div>
     </div>
   </section>
 

@@ -2,7 +2,7 @@
 Theme Name: Rex Jewelz
 Description: Converted from the static Rex Jewelz build. Class names and CSS are the
   originals, so the design is a port rather than a reinterpretation.
-Version: 1.0
+Version: 20260903.145100
 Requires PHP: 7.4
 */
 
@@ -682,6 +682,13 @@ h1,h2,h3,p{margin:0}
 /* Converted archive: active filter pill, mirroring the rule above
    because the pills are links now rather than JS toggled buttons. */
 .pill.is-on{background:var(--ivory);color:var(--void);border-color:var(--ivory)}
+
+
+/* Converted archive: the filter row. This brand had no pill row of its
+   own, so without this the pills lay out inline and long labels wrap
+   inside their border. The pill itself is the brand's existing rule. */
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:clamp(2rem,4vw,3rem)}
+.filters .pill{white-space:nowrap}
 
 
 /* ---------------------------------------------------------------- WooCommerce bridge

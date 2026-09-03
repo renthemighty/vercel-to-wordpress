@@ -8,7 +8,12 @@ links are rewritten to WordPress routes, and the product grids become real loops
 
 Run:  python3 tools/build_theme.py
 """
-import json, os, re, shutil, sys
+import json, os, re, shutil, sys, time
+
+# The EasWrk LiteSpeed edge caches CSS and JS by URL and a purge does NOT clear them,
+# so a stylesheet change is invisible until the query string moves. Stamp every build so
+# the enqueued URL changes whenever the theme is rebuilt.
+BUILD_VERSION = time.strftime('%Y%m%d.%H%M%S')
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT  = os.path.join(ROOT, 'out', 'themes')
@@ -129,6 +134,18 @@ def build(brand, cfg):
             '   because the pills are links now rather than JS toggled buttons. */\n'
             f'.pill.is-on{{{m.group(1)}}}\n')
 
+    # Rex Jewelz never had a pill row on its shop page, it used the sticky body rail, so
+    # its stylesheet carries no .filters rule at all. The converted archive's pills then
+    # lay out inline and a long label wraps INSIDE its own border, which is what "Chest &
+    # Bra" did at 390. Add the row only when the brand does not already style it, so
+    # FeatherMoss keeps its own spacing untouched.
+    if not re.search(r'\.filters\s*\{', css):
+        css += ('\n\n/* Converted archive: the filter row. This brand had no pill row of its\n'
+                '   own, so without this the pills lay out inline and long labels wrap\n'
+                '   inside their border. The pill itself is the brand\'s existing rule. */\n'
+                '.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:clamp(2rem,4vw,3rem)}\n'
+                '.filters .pill{white-space:nowrap}\n')
+
     # ---- WooCommerce bridge.
     # WooCommerce renders its own add to cart form, quantity box and notices, none of
     # which know about the brand. Rather than approximate the look, lift the brand's
@@ -201,7 +218,7 @@ form.cart .woocommerce-variation-price {{ margin:0 0 1rem; }}
 Theme Name: {cfg['name']}
 Description: Converted from the static {cfg['name']} build. Class names and CSS are the
   originals, so the design is a port rather than a reinterpretation.
-Version: 1.0
+Version: {BUILD_VERSION}
 Requires PHP: 7.4
 */
 
@@ -229,7 +246,7 @@ add_action( 'after_setup_theme', function () {{
 }} );
 
 add_action( 'wp_enqueue_scripts', function () {{
-    wp_enqueue_style( '{cfg['slug']}', get_stylesheet_uri(), array(), '1.0' );
+    wp_enqueue_style( '{cfg['slug']}', get_stylesheet_uri(), array(), '{BUILD_VERSION}' );
 }} );
 
 /** Bag count in the header, replacing the old data-bag-count JS hook. */
@@ -578,6 +595,35 @@ if ( $q->have_posts() ) : ?>
 """
     for f in ('page.php', 'single.php', 'index.php'):
         open(os.path.join(theme, f), 'w').write(page_tpl)
+
+    # ---- images referenced by the lifted markup.
+    # The hero and the editorial band carry <img src="images/x.jpg"> straight from the
+    # original build. Those paths are RELATIVE, so they resolve against whatever URL the
+    # visitor is on and 404 everywhere except the site root. Copy the files into the theme
+    # and point at them absolutely, so the port keeps the pictures the design was built
+    # around instead of quietly losing them.
+    assets = os.path.join(theme, 'assets')
+    for dp, _, fs in os.walk(theme):
+        for f in fs:
+            if not f.endswith('.php'):
+                continue
+            path = os.path.join(dp, f)
+            body = open(path).read()
+            refs = set(re.findall(r'(?:\.\./)?images/([A-Za-z0-9_.-]+)', body))
+            if not refs:
+                continue
+            os.makedirs(assets, exist_ok=True)
+            for name in refs:
+                srcp = os.path.join(src_dir, 'images', name)
+                if os.path.exists(srcp):
+                    shutil.copy(srcp, os.path.join(assets, name))
+                else:
+                    print(f'    MISSING IMAGE {brand}: {name}')
+            body = re.sub(
+                r'(?:\.\./)?images/([A-Za-z0-9_.-]+)',
+                lambda m: "<?php echo esc_url( get_template_directory_uri() ); ?>/assets/" + m.group(1),
+                body)
+            open(path, 'w').write(body)
 
     # screenshot for the theme picker
     for cand in ('l-hero-fruitsalad.jpg', 'l-hero-cintura.jpg'):

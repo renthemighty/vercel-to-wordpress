@@ -21,7 +21,7 @@
           <a class="btn btn--ghost" href="<?php echo esc_url( home_url( "/fit/" ) ); ?>">Find your fit</a>
         </div>
       </div>
-      <div class="hero__art"><img src="images/l-hero-cintura.jpg" alt="A fine gold waist chain worn low on the waist under a white tank" fetchpriority="high"></div>
+      <div class="hero__art"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/l-hero-cintura.jpg" alt="A fine gold waist chain worn low on the waist under a white tank" fetchpriority="high"></div>
     </div>
   </section>
 
@@ -72,7 +72,7 @@
         <p class="band__p">Two sisters, one studio off Calle Ocho, and a rule that started as a joke and turned into the whole business. Every piece gets worn out dancing before it gets a price. Whatever slid, snapped, tangled or went green got sent back to the bench.</p>
         <a class="btn btn--ember" href="<?php echo esc_url( home_url( "/about/" ) ); ?>">Read the rule</a>
       </div>
-      <div class="band__art"><img src="images/a-studio.jpg" alt="The Rex Jewelz bench in Miami" loading="lazy"></div>
+      <div class="band__art"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/a-studio.jpg" alt="The Rex Jewelz bench in Miami" loading="lazy"></div>
     </div>
   </section>
 

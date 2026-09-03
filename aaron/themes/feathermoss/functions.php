@@ -18,7 +18,7 @@ add_action( 'after_setup_theme', function () {
 } );
 
 add_action( 'wp_enqueue_scripts', function () {
-    wp_enqueue_style( 'feathermoss', get_stylesheet_uri(), array(), '1.0' );
+    wp_enqueue_style( 'feathermoss', get_stylesheet_uri(), array(), '20260903.145100' );
 } );
 
 /** Bag count in the header, replacing the old data-bag-count JS hook. */
