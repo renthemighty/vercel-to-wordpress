@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>Rex Jewelz</title>
+	<link>https://rexjewelz.vercel.app</link>
+	<description>Converted from the static build</description>
+	<pubDate>Sat, 30 Aug 2026 12:00:00 +0000</pubDate>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://rexjewelz.vercel.app</wp:base_site_url>
+	<wp:base_blog_url>https://rexjewelz.vercel.app</wp:base_blog_url>
+	<wp:author><wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[hello@rexjewelz.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Rex Jewelz]]></wp:author_display_name>
+	</wp:author>
+	<item>
+		<title>Two sisters, one bench, and a rule.</title>
+		<link>/about/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=101</guid>
+		<description></description>
+		<content:encoded><![CDATA[<section class="sec wrap">
+    <div class="prose">
+      
+      <p class="prose__lead">Rex Jewelz is made in Miami by two sisters who started making chain for themselves because nothing they could buy survived a night out.</p>
+    </div>
+    <div class="about__hero"><img src="https://rexjewelz.vercel.app/images/a-team.jpg" alt="The Rex Jewelz studio in Miami" loading="lazy"></div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="twocol">
+      <div class="prose">
+        <h2 class="prose__sub">How it started</h2>
+        <p>The first waist chain was made because a bought one snapped on a dance floor in Wynwood at two in the morning and disappeared under everyone's feet. The second was made because the replacement went green in a week. By the fourth or fifth the neighbours were asking for them, and it stopped being about one broken chain.</p>
+        <p>Everything is still made at the same bench, a few blocks off Calle Ocho, in a room that is far too hot for most of the year. That heat turns out to be useful. Plating that fails, fails here first.</p>
+
+        <h2 class="prose__sub">The rule</h2>
+        <p>Nothing gets a price until somebody has worn it out for a full night. Not photographed in it. Worn it, danced in it, sweated in it, got home at four and looked at what it did.</p>
+        <p>Pieces that slid, snapped, tangled, dug in or turned skin green went back to the bench. The thigh chain took eleven goes before the silicone grip band solved it. Veneno took most of a year, because a nine point body chain that stays true all night is a genuinely hard object to build.</p>
+
+        <h2 class="prose__sub">Why the pieces have the names they have</h2>
+        <p>They are named the way things get named in a Miami kitchen, quickly and with no ceremony. Sal because it is small and goes on everything. Brasa because the red stones look like an ember. Diabla because of what it does to a room. La Reina because the person who finished the first one held it up and said it, and nobody argued.</p>
+      </div>
+      <div class="about__side">
+        <img src="https://rexjewelz.vercel.app/images/a-studio.jpg" alt="Chain and tools on the Rex Jewelz bench" loading="lazy">
+        <p class="about__cap">The bench, most afternoons.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="wrap band__grid">
+      <div>
+        <h2 class="sec__h metal">Made here, <em>all of it</em></h2>
+        <p class="band__p">Nothing is drop shipped and nothing arrives finished. Chain and findings come from suppliers we have used for years, then every piece is assembled, set and checked by hand before it goes in a box. The crystal pieces take days rather than hours, which is why they cost what they cost and why they sell out.</p>
+        <a class="btn btn--ember" href="https://rexjewelz.vercel.app/shop.html">Shop what is ready</a>
+      </div>
+      <div class="band__art"><img src="https://rexjewelz.vercel.app/images/p-diabla.jpg" alt="Crystal fringe bra chain on the bench" loading="lazy"></div>
+    </div>
+  </section>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[about]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Care and keeping</title>
+		<link>/care/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=102</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">None of this is difficult, but a few habits are the difference between a piece lasting years and lasting one summer.</p>
+  <h2 class="prose__sub">The three rules</h2>
+  <p>Rinse and dry anything that has been in the sea or a pool. Salt and chlorine are what actually strip plating, and Miami is full of both.</p>
+  <p>Put jewelry on after perfume, lotion and hairspray, never before. Alcohol dulls plating and clouds crystal faster than anything else.</p>
+  <p>Store pieces flat and separately. Long chains tangle into each other in a way that takes an hour and a pin to undo.</p>
+  <h2 class="prose__sub">Cleaning</h2>
+  <p>A dry soft cloth is enough for almost everything. For crystal, breathe on it and buff it the way you would a pair of glasses.</p>
+  <p>Never use jewelry dip or silver polish on plated brass. It strips the plating and the plating does not come back.</p>
+  <h2 class="prose__sub">Sweat</h2>
+  <p>Sweat is not the enemy, salt left sitting on metal overnight is. Wipe a piece down before bed after a heavy night and it will outlast anything you have owned.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[care]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Say something</title>
+		<link>/contact/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=103</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">One of us reads everything that comes in, usually within a day. If it is about an existing order, include the order number and it will be much faster.</p>
+  <div class="twocol">
+    <div>
+      <h2 class="prose__sub">Email</h2>
+      <p><a class="link" href="mailto:hello@rexjewelz.com">hello@rexjewelz.com</a></p>
+      <h2 class="prose__sub">Instagram</h2>
+      <p><a class="link" href="https://instagram.com/rexjewelz" rel="noopener">@rexjewelz</a>, where the new pieces go up first.</p>
+      <h2 class="prose__sub">The studio</h2>
+      <p>Miami, Florida. Visits by arrangement, since it is a working bench and not a shop.</p>
+    </div>
+    <div>
+      <h2 class="prose__sub">Made to measure</h2>
+      <p>Send the measurements from the fit page along with the piece you want and we will come back with a price and a date. Most requests are possible. The ones that are not, we will say so rather than take the money and hope.</p>
+      <h2 class="prose__sub">Stylists and press</h2>
+      <p>We pull for shoots and we are quick about it. Tell us the shoot date and what you are dressing and we will send what fits the brief.</p>
+      <h2 class="prose__sub">Repairs</h2>
+      <p>Send a photo of what went wrong and roughly when you bought it. Most things are fixable and most repairs are free.</p>
+    </div>
+  </div>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[contact]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Returns and exchanges</title>
+		<link>/returns/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=104</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">If it is not right, tell us. We would rather sort it out than have you keep something that sits in a drawer.</p>
+  <h2 class="prose__sub">The short version</h2>
+  <p>You have 30 days from delivery. Send it back unworn and in its box for a refund or an exchange, whichever you prefer.</p>
+  <p>Return postage is on you unless the piece arrived damaged or we sent the wrong thing, in which case it is on us and we will send a label.</p>
+  <h2 class="prose__sub">Sizing exchanges are free</h2>
+  <p>If the only problem is the size, the exchange ships back to you at no charge. Body chain is hard to buy blind and we would rather eat the postage than have you give up on it.</p>
+  <p>Made to measure pieces cannot be returned for size, which is why we ask twice before we build one.</p>
+  <h2 class="prose__sub">If something breaks</h2>
+  <p>Within the first year, if a clasp fails or a connector goes, send it back and we will repair it at no charge. Beyond a year we will still usually fix it, we may just ask you to cover postage.</p>
+  <p>Sea water and perfume are what end pieces early. Both are covered in the care notes.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[returns]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Shipping and timing</title>
+		<link>/shipping/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=105</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">Everything is made to order in Miami, so there is a short wait before anything moves.</p>
+  <h2 class="prose__sub">How long it takes</h2>
+  <p>Most pieces are made and shipped within 3 to 5 working days. Crystal pieces take longer because every stone is set by hand, usually 5 to 8 days. Anything made to measure takes about three weeks and we will tell you the date when we take the order.</p>
+  <p>You get a tracking number the moment the label is made, not when the parcel is collected, so there can be a day where it exists but has not moved. That is normal and it is not a lost parcel.</p>
+  <h2 class="prose__sub">What it costs</h2>
+  <p>Shipping inside the United States is a flat $7, and free on orders over $95. Canada is $16. Everywhere else is $24.</p>
+  <p>International orders can attract duties on arrival. Those are set by your country and there is no way for us to pay them in advance.</p>
+  <h2 class="prose__sub">Where we ship</h2>
+  <p>Worldwide, except anywhere our carrier will not insure. If checkout will not take your address, send us a message and we will usually find a way around it.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>105</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[shipping]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Fit and sizing</title>
+		<link>/fit/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=106</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">Body chain lives or dies on fit. A waist chain that rides up gets taken off in the bathroom and never worn again. Two minutes with a tape measure fixes that.</p>
+
+  <h2 class="prose__sub">The one rule</h2>
+  <p>Measure where the piece will actually sit on you, not your dress size and not your jeans size. A waist chain worn high at the natural waist and the same chain worn low on the hip are two different measurements on the same body, sometimes four inches apart.</p>
+  <p>If you land between two sizes, take the larger one. Every piece we make adjusts down through its extender chain. None of them adjust up.</p>
+
+  <h2 class="prose__sub">Waist and belly chains</h2>
+  <p>Stand up straight and breathe out normally. Run the tape around wherever you want the chain to sit, snug but not pulling. That number is your size. XS to S covers 24 to 29 inches, M to L covers 29 to 35, XL to 2X covers 35 to 44.</p>
+  <p>For a chain you want to sit low and loose on the hip, add an inch to whatever you measured.</p>
+
+  <h2 class="prose__sub">Chest and harness pieces</h2>
+  <p>Take two measurements. Around the ribcage directly under the bust, and around the fullest part of the bust. Use the underbust number to pick the size and the bust number to check the straps have room. Everything in this group adjusts at the band and at both straps.</p>
+
+  <h2 class="prose__sub">Thigh chains</h2>
+  <p>Measure around the widest part of the thigh, sitting down rather than standing. Thighs spread when you sit and a chain sized standing will cut in the moment you take a seat. The silicone grip band handles the rest.</p>
+
+  <h2 class="prose__sub">Anklets and hand chains</h2>
+  <p>Anklets run on a two inch extender so most people are fine on the standard length. For the hand chain, measure your wrist and pick the ring size you would normally wear on your index finger, since the band is adjustable through two sizes either way.</p>
+
+  <h2 class="prose__sub">When none of it fits</h2>
+  <p>Veneno is available made to measure at $274. Send us the numbers and we will build it to them, which takes about three weeks. If you want any other piece built to measure, ask us on the <a class="link" href="https://rexjewelz.vercel.app/contact.html">contact page</a> and we will tell you honestly whether it is possible.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>106</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[fit]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Body chains</title>
+		<link>/body/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=107</guid>
+		<description></description>
+		<content:encoded><![CDATA[<div class="sec__head">
+    
+    <a class="sec__link" href="https://rexjewelz.vercel.app/shop.html">All 20 pieces</a>
+  </div>
+  <p class="cat__lead">Waist, belly, chest, harness, back and thigh. The pieces that take a size rather than a length.</p>
+
+  <div class="twocol" style="margin-bottom:clamp(2rem,5vw,3.5rem)">
+    <div>
+      <p>These are the 12 pieces that sit on the body rather than hanging off it, and they are the reason the brand exists. A necklace only has to be the right length. A waist chain has to be the right size, sit at the right height, and still be there four hours later.</p>
+      <p>That is a harder object to make and it is where most body chain fails. Ours carry their weight at the back, adjust at every join, and the thigh chain hides a silicone grip band because eleven versions without one all slid.</p>
+    </div>
+    <div>
+      <p>Worn under a shirt nobody knows it is there. Worn over a slip it changes the whole outfit. Either way it is a layer, not the outfit, which is the part the photographs never quite tell you.</p>
+      <p>Every piece here comes in three or four real sizes, and the full body chain can be built to your measurements. Take two minutes with a tape measure first, on the <a class="link" href="https://rexjewelz.vercel.app/fit.html">fit page</a>, and you will get it right the first time.</p>
+    </div>
+  </div>
+      
+<!-- products this page listed on the original, rendered live -->
+[products skus="REX-SAL,REX-CINTURA,REX-MUSLO,REX-MONEDAS,REX-DOBLE,REX-BRASA,REX-MEDIANOCHE,REX-JAULA,REX-ESPALDA,REX-DIABLA,REX-LA-REINA,REX-VENENO" limit="-1" columns="4" orderby="menu_order" order="ASC"]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>107</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[body]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>7</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Under $50</title>
+		<link>/under-50/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=108</guid>
+		<description></description>
+		<content:encoded><![CDATA[<div class="sec__head">
+    
+    <a class="sec__link" href="https://rexjewelz.vercel.app/shop.html">All 20 pieces</a>
+  </div>
+  <p class="cat__lead">8 pieces from $12, plus the starter set at $46. Nothing on this page is a lesser version of anything.</p>
+
+  <div class="twocol" style="margin-bottom:clamp(2rem,5vw,3.5rem)">
+    <div>
+      <p>Cheap in this catalogue means small and simple, not badly made. The $12 anklet uses the same plated brass and the same clasp as the $169 body chain. There is less of it, and no stone setting, which is the entire reason for the price.</p>
+      <p>What you should not buy first is the most expensive thing. Buy a waist chain, wear it under everything for a fortnight, and see how often you reach for it.</p>
+    </div>
+    <div>
+      <p>The charms are the other honest way in. At $13 for one you can afford to choose badly, clip it onto a chain you already own, and decide later whether the rest is for you.</p>
+      <p>Everything here still ships in 3 to 5 days and still carries the one year repair. Free shipping starts at $95, so two of these get you there.</p>
+    </div>
+  </div>
+      <section class="sec" style="padding-bottom:0">
+    <div class="sec__head">
+      <h2 class="sec__h metal">Or take the <em>starter set</em></h2>
+      <a class="sec__link" href="https://rexjewelz.vercel.app/sets.html">All sets</a>
+    </div>
+      </section>
+
+<!-- products this page listed on the original, rendered live -->
+[products skus="REX-SAL,REX-DIJES,REX-OJOS,REX-CINTURA,REX-HUMO,REX-MUSLO,REX-MONEDAS,REX-MORDIDA,REX-SET-PRIMERA" limit="-1" columns="4" orderby="menu_order" order="ASC"]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>108</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[under-50]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>8</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>What you are paying for when you buy crystal</title>
+		<link>/crystal-is-labour/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=109</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">La Reina costs more than everything else combined. Here is exactly where that money goes.</p>
+  <h2 class="prose__sub">It is hours, not materials</h2>
+  <p>The crystal in a chain bralette is not the expensive part. The expensive part is that somebody sits with it for the better part of two days, setting stones into a shaped mesh one at a time, checking the line every few rows because a single stone set half a degree off will throw the whole run out by the time it reaches the edge.</p>
+  <p>Machine set crystal exists and it is much cheaper. It also sits flat and dead, because the whole point of a prong is that it lifts the stone off the backing and lets light get underneath it.</p>
+  <h2 class="prose__sub">Why the fringe is cut unevenly</h2>
+  <p>On Diabla the fringe is cut to staggered lengths rather than a straight line. A straight fringe hangs like a curtain and moves as one solid block. Staggered lengths break it up so each strand swings on its own timing, which is why it keeps moving for a half second after you have stopped.</p>
+  <p>That is a deliberate choice that costs more to make and it is the difference between the piece looking alive and looking like a costume.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>109</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[crystal-is-labour]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Body chain goes under clothes, not instead of them</title>
+		<link>/under-not-instead/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=110</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">The most common misread of the category, and the reason most people who try it never go back.</p>
+  <h2 class="prose__sub">The photographs lie a little</h2>
+  <p>Almost every body chain photograph online shows it worn on bare skin against a plain background, because that is the clearest way to show what the object is. It is a terrible guide to how anybody actually wears one.</p>
+  <p>A waist chain under a white shirt that shows through when you move is doing more work than the same chain worn bare. A chest drape over a plain black slip changes the whole outfit. The chain is a layer, not the outfit.</p>
+  <h2 class="prose__sub">Where to start</h2>
+  <p>Buy a waist chain first, wear it under everything for two weeks, and see how often you think about it. That is genuinely how most people end up buying the rest. It is $30, it goes on in the morning, and nobody knows it is there except you until you decide otherwise.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>110</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[under-not-instead]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Why your waist chain slides, and how we stopped it</title>
+		<link>/why-it-slides/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=111</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">The single most common reason people give up on body chain, and it is a solvable engineering problem.</p>
+  <h2 class="prose__sub">The problem is the taper</h2>
+  <p>A waist is not a cylinder. It narrows going up and flares going down, so a plain loop of chain sitting on it is on a slope. Gravity does the rest. Every step you take, the chain finds a slightly wider spot and settles into it, and forty minutes later it is sitting on your hip bones instead of your waist.</p>
+  <p>Sizing down does not fix this. It just means the chain digs in while it slides.</p>
+  <h2 class="prose__sub">What actually works</h2>
+  <p>Two things. Weight distribution and friction. Our waist chains carry their clasp and extender at the back so the heaviest point sits in the hollow of the spine, which is the one place on the torso that is naturally concave. The chain wants to stay there.</p>
+  <p>The thigh chain needed more, because a thigh has a much steeper taper than a waist. It took eleven versions before we put a thin silicone lined band behind the front chain, hidden completely, and the sliding stopped. That band is the whole reason that piece exists.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>111</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[why-it-slides]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>FeatherMoss</title>
+	<link>https://feathermoss.vercel.app</link>
+	<description>Converted from the static build</description>
+	<pubDate>Sat, 30 Aug 2026 12:00:00 +0000</pubDate>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://feathermoss.vercel.app</wp:base_site_url>
+	<wp:base_blog_url>https://feathermoss.vercel.app</wp:base_blog_url>
+	<wp:author><wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[hello@feathermoss.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[FeatherMoss]]></wp:author_display_name>
+	</wp:author>
+	<item>
+		<title>Five women, one studio, a lot of opinions.</title>
+		<link>/about/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=101</guid>
+		<description></description>
+		<content:encoded><![CDATA[<section class="sec wrap">
+    <div class="about__head">
+      
+      <p class="prose__lead">FeatherMoss is made in San Diego by a group of women who met doing other jobs and kept ending up at the same table on weekends, arguing about colour and stringing beads until it stopped being a hobby.</p>
+    </div>
+    <div class="about__hero"><img src="https://feathermoss.vercel.app/images/a-team.jpg" alt="The FeatherMoss studio team in San Diego"></div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="about__cols">
+      <div>
+        <h2 class="prose__sub">How it started</h2>
+        <p>It started as a standing Sunday thing. One kitchen table, too many bead trays, and a rule that whatever you made you had to actually wear that week. The rule turned out to matter. Anything too delicate broke, anything too precious stayed in a drawer, and what survived was the loud stuff you forgot you had on.</p>
+        <p>That is still the whole test. If a piece cannot go in a bag, get rained on, and come out fine, we do not sell it.</p>
+        <h2 class="prose__sub">What we believe about kitsch</h2>
+        <p>Kitsch gets treated as a lesser thing, something you grow out of. We think the opposite. Wearing a glass cherry on your neck at thirty four is a decision, not an accident, and it deserves to be made properly, with real materials and real construction.</p>
+        <p>So the fruit is glass, not plastic. The pearls are freshwater and genuinely irregular. The enamel is fired, the findings are gold plated brass, and the cord is knotted between every single bead so that if one goes, the rest stay on the string.</p>
+      </div>
+      <div class="about__side">
+        <img src="https://feathermoss.vercel.app/images/a-studio.jpg" alt="Two of the team working at the bench in the San Diego studio">
+        <p class="about__cap">The bench, most afternoons.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="wrap band__grid">
+      <div>
+        <h2 class="sec__h">Everything is made <em>here</em></h2>
+        <p class="band__p">Nothing is drop shipped and nothing arrives finished. Beads and findings are sourced from suppliers we have used for years, then every piece is assembled, knotted and checked in the studio before it goes in a box. When something sells out it is because five people can only make so much in a week.</p>
+        <a class="btn btn--ember" href="https://feathermoss.vercel.app/shop.html">Shop what is ready</a>
+      </div>
+      <div class="band__art"><img src="https://feathermoss.vercel.app/images/l-workbench.jpg" alt="Bead trays and tools on the studio bench"></div>
+    </div>
+  </section>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[about]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Care and keeping</title>
+		<link>/care/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=102</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">None of this is precious, but a few habits will keep everything looking new for years rather than months.</p>
+  <h2 class="prose__sub">The three rules</h2>
+  <p>Keep it out of the shower, the pool and the sea. Chlorine and salt are what actually kill gold plating.</p>
+  <p>Put jewelry on after perfume, lotion and hairspray, never before. Alcohol dulls enamel faster than anything else.</p>
+  <p>Store pieces flat and separately. Cords twist and chains tangle when things get thrown in together.</p>
+  <h2 class="prose__sub">Cleaning</h2>
+  <p>A dry soft cloth is enough for almost everything. For enamel and glass, breathe on it and buff, the way you would with glasses.</p>
+  <p>Never use jewelry dip or silver polish on plated brass. It strips the plating and it does not come back.</p>
+  <h2 class="prose__sub">Pearls specifically</h2>
+  <p>Freshwater pearls are the softest thing we use. Wipe them after wearing, keep them away from anything acidic, and do not store them anywhere hot.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[care]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Say hello</title>
+		<link>/contact/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=103</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">One of us reads everything that comes in, usually within a day. If it is about an existing order, include the order number and it will be much faster.</p>
+  <div class="contact__grid">
+    <div>
+      <h2 class="prose__sub">Email</h2>
+      <p><a class="link" href="mailto:hello@feathermoss.com">hello@feathermoss.com</a></p>
+      <h2 class="prose__sub">Instagram</h2>
+      <p><a class="link" href="https://instagram.com/feathermoss" rel="noopener">@feathermoss</a>, where we post what is on the bench.</p>
+      <h2 class="prose__sub">The studio</h2>
+      <p>San Diego, California. Visits by arrangement, since it is a working bench and not a shop.</p>
+    </div>
+    <div>
+      <h2 class="prose__sub">Wholesale and press</h2>
+      <p>We work with a small number of stockists. If you run a shop and think the pieces would suit it, send through your shop name and a link and we will come back to you.</p>
+      <p>For press, high resolution images and product details are available on request.</p>
+      <h2 class="prose__sub">Repairs</h2>
+      <p>Send a photo of what went wrong along with roughly when you bought it. Most things are fixable and most repairs are free.</p>
+    </div>
+  </div>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[contact]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Returns and exchanges</title>
+		<link>/returns/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=104</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">If it is not right, tell us. We would rather sort it out than have you keep something you do not wear.</p>
+  <h2 class="prose__sub">The short version</h2>
+  <p>You have 30 days from delivery. Send it back unworn and in its box and you get a refund or an exchange, whichever you prefer.</p>
+  <p>Return postage is on you unless the piece arrived damaged or we sent the wrong thing, in which case it is on us and we will send a label.</p>
+  <h2 class="prose__sub">Made to order pieces</h2>
+  <p>Everything is made to order, which is why we ask you to be reasonably sure before you buy. It also means we cannot take back anything that has been worn, resized or altered.</p>
+  <h2 class="prose__sub">If something breaks</h2>
+  <p>Within the first year, if a clasp fails or a cord goes, send it back and we will repair it at no charge. Beyond a year we will still usually fix it, we just may ask for postage.</p>
+  <p>Sea water and perfume are the two things that end pieces early. Both are covered in the care notes.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[returns]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Shipping and timing</title>
+		<link>/shipping/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=105</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">Everything is made to order in San Diego, so there is a short wait before anything moves.</p>
+  <h2 class="prose__sub">How long it takes</h2>
+  <p>Pieces are made and shipped within 3 to 5 working days. Sets take a little longer because more of them have to be finished at once, usually 5 to 7 days.</p>
+  <p>You get a tracking number the moment the label is made, not when the parcel is collected, so there can be a day where it exists but has not moved yet. That is normal.</p>
+  <h2 class="prose__sub">What it costs</h2>
+  <p>Shipping inside the United States is a flat $6, and free on orders over $75. Canada is $14. Everywhere else is $22.</p>
+  <p>International orders can attract duties on arrival. Those are set by your country and we have no way to pay them in advance.</p>
+  <h2 class="prose__sub">Where we ship</h2>
+  <p>Worldwide, with the exception of anywhere our carrier will not insure. If checkout will not accept your address, send us a message and we will usually find a way.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>105</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[shipping]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Stockists and where to find us</title>
+		<link>/stockists/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=106</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">Most of what we make goes out from this site, but a handful of shops carry a small edit.</p>
+  <h2 class="prose__sub">California</h2>
+  <p>Two shops in San Diego carry the Fruit Stand and Candy Counter pieces, and one in Los Angeles takes the full necklace range. Ask for us by name and they will know.</p>
+  <h2 class="prose__sub">Markets</h2>
+  <p>We do a small number of markets a year, mostly around San Diego, and we announce them on Instagram about two weeks out. That is the only place everything is available to try on at once.</p>
+  <h2 class="prose__sub">Want to stock us</h2>
+  <p>We are choosy about this, not out of grandness but because five people can only make so much. If your shop feels right, send a link through the contact page and tell us what your customers already buy.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>106</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[stockists]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Glass, not plastic, and why it matters</title>
+		<link>/glass-not-plastic/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=107</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">The fruit could be resin. It would be cheaper, lighter and easier. Here is what you would lose.</p>
+  <h2 class="prose__sub">Weight is information</h2>
+  <p>Glass has heft. When you put on a glass cherry necklace you feel it settle, and that weight is most of what makes a piece feel real rather than novelty. Resin fruit sits on you like a sticker.</p>
+  <h2 class="prose__sub">Colour that does not go</h2>
+  <p>Glass colour is in the material. Resin and painted plastic sit on the surface, and surfaces rub, especially anything that lives against skin or in a bag. Two summers in, painted fruit looks tired. Glass looks the same as the day it was made.</p>
+  <p>The catch is that glass breaks if you are careless with it. We would still rather sell you something that can break than something that slowly goes ugly.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>107</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[glass-not-plastic]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Why we knot between every bead</title>
+		<link>/how-we-knot/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=108</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">It doubles the work and it is the single reason our necklaces survive being dropped.</p>
+  <h2 class="prose__sub">The problem with stringing</h2>
+  <p>On a plain strung necklace, every bead sits against its neighbour on one continuous thread. It looks fine and it is fast to make. The trouble comes the first time it catches on something. One break and the entire strand goes on the floor, usually somewhere with a drain.</p>
+  <h2 class="prose__sub">What knotting does</h2>
+  <p>A knot between each bead means a break costs you one bead, not forty. It also stops the beads grinding against each other, which is what dulls glass over time, and it gives the whole piece a softer drape that follows the neck instead of sitting on it.</p>
+  <p>It is slower. A knotted necklace takes about three times as long as a strung one. We think that is the right trade.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>108</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[how-we-knot]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>It does not have to mean anything</title>
+		<link>/one-charm/</link>
+		<pubDate>2026-08-30 12:00:00</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">/?p=109</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p class="prose__lead">On charms, meaning, and the freedom of just liking the look of a small bee.</p>
+  <h2 class="prose__sub">The meaning problem</h2>
+  <p>Charm jewelry has spent a long time being sold as a memory system. A charm for the trip, a charm for the birth, a charm for the year everything changed. That is lovely and it is also a lot of pressure to put on a small piece of enamel.</p>
+  <h2 class="prose__sub">The alternative</h2>
+  <p>Our charms come with no story attached. Pick the mushroom because you like mushrooms. Pick the bow because it is a good bow. Put six on a bracelet that have nothing to do with each other and let that be the whole point.</p>
+  <p>At $12 you can afford to choose badly, which is exactly the freedom that a meaningful charm never gives you.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>109</wp:post_id>
+		<wp:post_date><![CDATA[2026-08-30 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-08-30 12:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[one-charm]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+</channel>
+</rss>

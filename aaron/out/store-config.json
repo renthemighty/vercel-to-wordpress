@@ -1,0 +1,84 @@
+{
+  "feathermoss": {
+    "target_domain": "feathermoss.com",
+    "source_of_truth": "ai_life/feathermoss/site/fm-cart.js",
+    "currency": "USD",
+    "free_shipping_over": 75,
+    "flat_shipping_rate": 6,
+    "legacy_cart_storage_key": "fm_cart_v1",
+    "product_count": 16,
+    "set_count": 4,
+    "categories": [
+      "Necklaces",
+      "Earrings",
+      "Bracelets",
+      "Rings",
+      "Charms & Extras",
+      "Sets"
+    ],
+    "tags": [
+      "Fruit Stand",
+      "Flower Bed",
+      "Pearl",
+      "Candy Counter",
+      "Everyday"
+    ],
+    "support_email": "hello@feathermoss.com",
+    "pdp_note": "Made to order, ships in 3 to 5 days. Free shipping over $75.",
+    "care_bullets": [
+      "Keep it out of the shower and the sea",
+      "Put it on after perfume, not before",
+      "Store it flat so nothing tangles"
+    ],
+    "size_note": null,
+    "category_descriptions": {
+      "Charms & Extras": "The cheapest way into the whole thing. Clip them onto anything you already own.",
+      "Necklaces": "Beaded, charmed and enamelled. Worn short, worn long, worn all at once.",
+      "Sets": "The same pieces, chosen together, priced under the sum of their parts."
+    }
+  },
+  "rexjewelz": {
+    "target_domain": "rexjewelz.com",
+    "source_of_truth": "ai_life/rexjewelz/site/rex-cart.js",
+    "currency": "USD",
+    "free_shipping_over": 95,
+    "flat_shipping_rate": 7,
+    "legacy_cart_storage_key": "rex_cart_v1",
+    "product_count": 16,
+    "set_count": 4,
+    "categories": [
+      "Neck & Hand",
+      "Chest & Bra",
+      "Harness & Back",
+      "Waist & Belly",
+      "Anklets & Thigh",
+      "Sets"
+    ],
+    "tags": [
+      "Bronce",
+      "Fuego",
+      "Oro",
+      "Hielo",
+      "Diario"
+    ],
+    "support_email": "hello@rexjewelz.com",
+    "pdp_note": "Made to order, ships in 3 to 5 days. Free shipping over $95.",
+    "care_bullets": [
+      "Rinse it after the beach or the pool, salt and chlorine are what kill plating",
+      "Put it on after perfume and lotion, never before",
+      "Store it flat and on its own so nothing tangles"
+    ],
+    "size_note": {
+      "heading": "Getting the size right",
+      "body": "Measure where the piece will actually sit, not your clothing size. If you land between two sizes take the larger one, since every piece adjusts down but none adjust up. The full guide is on the fit page."
+    },
+    "category_descriptions": {
+      "Neck & Hand": "collarbone to fingertip",
+      "Chest & Bra": "sternum and ribs",
+      "Harness & Back": "shoulder to spine",
+      "Waist & Belly": "waist and hip",
+      "Anklets & Thigh": "thigh to ankle",
+      "Sets": "The same pieces chosen together and priced under the sum of their parts."
+    }
+  }
+}
